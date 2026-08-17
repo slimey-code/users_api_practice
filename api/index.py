@@ -106,5 +106,3 @@ def DeleteUser(id):
             users.remove(user)
             return {"msg" : "user deleted"}, 200
     return {"msg" : "no user"}, 404
-
-app.run()
