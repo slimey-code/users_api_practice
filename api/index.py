@@ -1,15 +1,11 @@
 
-import os
 from flask import Flask,render_template,request
 
 users = []
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
 
-# 2. Join the absolute system path to target the templates directory 
-template_dir = os.path.join(base_dir, '..', 'templates')
 
-app = Flask(__name__, template_folder=template_dir)
+app = Flask(__name__, template_folder="../templates") 
 
 @app.route("/")
 def home():
