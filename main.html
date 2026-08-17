@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../static/appforgpt.js" defer></script>
+</head>
+<body>
+    <style>
+        .register{
+            background-color: yellowgreen;
+
+        }
+        .register section{
+            width: 100%;
+            height: auto;
+        }
+        .login{
+            background-color: rgb(50, 205, 146);
+
+        }
+        .login section{
+            width: 100%;
+            height: auto;
+        }
+        .users{
+            background-color: burlywood;
+        }
+        .users section{
+            width: 100%;
+            height: auto;
+        }
+        .delete{
+            background-color: rgb(250, 112, 74);
+        }
+        .delete section{
+            width: 100%;
+            height: auto;
+        }
+        .patch{
+            background-color: #c41cee;
+        }
+        .patch section{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+    <section class="register">
+        <h1>register</h1>
+        <input id="username_input_R">
+        <input id="password_input_R">
+        <button onclick="RegisterUser()">register</button>
+
+        <div id="register_log">nothing here</div>
+    </section>
+
+    <section class="login">
+        <h1>login</h1>
+        <input id="username_input_L">
+        <input id="password_input_L">
+        <button onclick="LoginUser()">login</button>
+
+        <div id="login_log">nothing here</div>
+    </section>
+
+    <section class="delete">
+        <h1>delete users</h1>
+        <input id="username_input_D">
+        <button onclick="DeleteUser()">delete user</button>
+
+        <div id="delete_log">nothing here</div>
+    </section>
+
+    <section class="patch">
+        <h1>patch users</h1>
+        change username here
+        <input id="username_input_P">
+        change password here
+        <input id="password_input_P">
+
+        <button onclick="PatchUser('username')">change username</button>
+        <button onclick="PatchUser('password')">change password</button>
+
+        <div id="patch_log">nothing here</div>
+    </section>
+
+    <section class="users">
+        <h1>check users</h1>
+        <button onclick="GetUsers()">check users</button>
+
+        <div id="users_log">nothing here</div>
+    </section>
+
+    
+
+</body>
+</html>
